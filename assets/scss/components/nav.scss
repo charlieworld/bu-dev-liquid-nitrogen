@@ -1,0 +1,41 @@
+.navbar{
+  padding: 0;
+}
+
+.nav-custom {
+  a {
+    color: black;
+  }
+  a:hover {
+    color: $colorBlue;
+  }
+
+  padding: 0.5rem 2rem;
+}
+
+.nav-custom-fixed-top {
+  a {
+    color: $colorText;
+  }
+  a:hover {
+    color: $colorBlue;
+  }
+  background-color: rgb(207,234,238);
+  border-radius: 0px 0px 2rem 2rem;
+}
+
+.navbar-brand {
+  margin-right: 2rem;
+}
+
+.navbar-nav {
+  display: inline-flex;
+  .active {
+    color: $colorBlue;
+  }
+}
+
+.nav-item {
+  margin: 0 1rem;
+  text-align: center;
+}
