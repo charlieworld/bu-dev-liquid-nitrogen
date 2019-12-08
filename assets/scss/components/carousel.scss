@@ -1,3 +1,9 @@
 .carousel-item {
   height: 100vh;
 }
+
+
+
+.carousel-indicators li .active{
+  background-color: $colorBlue;
+}
