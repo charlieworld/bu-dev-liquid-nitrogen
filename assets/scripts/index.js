@@ -26,3 +26,4 @@ function getWindowWidth() {
 }
 
 resizeEvent ();
+scrollEvent();

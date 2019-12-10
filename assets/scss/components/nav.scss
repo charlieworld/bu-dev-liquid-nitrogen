@@ -13,7 +13,6 @@
   a:hover {
     color: $colorBlue;
   }
-
   padding: 0rem 1rem 0.4rem 1rem;
 }
 
@@ -42,4 +41,8 @@
 .nav-item {
   margin: 0 1rem;
   text-align: center;
+}
+
+.bg-light {
+  background-color: transparent !important;
 }
