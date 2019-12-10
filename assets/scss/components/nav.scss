@@ -7,13 +7,14 @@
 }
 
 .nav-custom {
+  display: flex;
   a {
     color: black;
   }
   a:hover {
     color: $colorBlue;
   }
-  padding: 0rem 1rem 0.4rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
 }
 
 .nav-custom-fixed-top {
@@ -32,7 +33,6 @@
 }
 
 .navbar-nav {
-  display: inline-flex;
   .active {
     color: $colorBlue;
   }
