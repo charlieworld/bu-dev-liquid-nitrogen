@@ -1,0 +1,30 @@
+
+#application{
+  position: relative;
+}
+
+.application_img {
+  height: 50vh;
+  width: 100%;
+  background-position:  center center;
+  background-size: cover;
+}
+
+.application-title{
+  position: absolute;
+  bottom: 50%;
+  margin-bottom: -40px;
+  left: 50%;
+  margin-left: -15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #BDCCD4;
+  border-radius: 15px;
+  padding: 0rem 1rem;
+  width: 30%;
+  height: 80px;
+  img {
+    width: 90%;
+  }
+}
