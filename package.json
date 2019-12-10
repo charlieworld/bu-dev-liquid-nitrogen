@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "parcel index.html -d dist-dev",
-    "build": "parcel build -d docs index.html"
+    "build": "rm -r dist && parcel build *.html --no-source-maps && cp CNAME ./dist"
   },
   "license": "MIT",
   "devDependencies": {
