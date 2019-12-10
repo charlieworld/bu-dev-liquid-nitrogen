@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "parcel index.html -d dist-dev",
-    "build": "parcel build index.html"
+    "build": "parcel build -d docs index.html"
   },
   "license": "MIT",
   "devDependencies": {
