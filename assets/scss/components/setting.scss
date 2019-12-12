@@ -12,6 +12,7 @@ $sizeXL: 1200px;
 .hide-LG { display: none;}
 .hide-XL { display: none;}
 
+.show-under-XS { display: block;}
 .show-under-SM { display: block;}
 .show-under-MD { display: block;}
 .show-under-LG { display: block;}
@@ -20,12 +21,12 @@ $sizeXL: 1200px;
 @media screen and (min-width: $sizeSM) {
   .hide-SM { display: block;}
   .hide-SM-flex { display: flex;}
-  .show-under-SM { display: block;} 
+  .show-under-XS { display: none;}
 }
 
 @media screen and (min-width: $sizeMD) {
   .hide-MD { display: block;}
-  .show-under-MD { display: block;}
+  .hide-MD-flex { display: flex;}
   .show-under-SM { display: none;} 
 }
 
