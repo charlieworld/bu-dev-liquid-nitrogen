@@ -1,2 +1,42 @@
 $colorText: rgba(0,0,0,0.65);
 $colorBlue: #008ED8;
+
+$sizeSM: 576px;
+$sizeMD: 768px;
+$sizeLG: 992px;
+$sizeXL: 1200px;
+
+.hide-SM { display: none;}
+.hide-SM-flex { display: none;}
+.hide-MD { display: none;}
+.hide-LG { display: none;}
+.hide-XL { display: none;}
+
+.show-under-SM { display: block;}
+.show-under-MD { display: block;}
+.show-under-LG { display: block;}
+.show-under-XL { display: block;}
+
+@media screen and (min-width: $sizeSM) {
+  .hide-SM { display: block;}
+  .hide-SM-flex { display: flex;}
+  .show-under-SM { display: block;} 
+}
+
+@media screen and (min-width: $sizeMD) {
+  .hide-MD { display: block;}
+  .show-under-MD { display: block;}
+  .show-under-SM { display: none;} 
+}
+
+@media screen and (min-width: $sizeLG) {
+  .hide-LG { display: block;}
+  .show-under-MD { display: none;}
+  .show-under-LG { display: flex;}
+}
+
+@media screen and (min-width: $sizeXL) {
+  .hide-XL { display: block;}
+  .show-under-LG { display: none;}
+  .show-under-XL { display: block;}
+}

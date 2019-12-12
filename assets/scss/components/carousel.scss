@@ -1,9 +1,24 @@
-.carousel-item {
-  max-height: 100vh;
+.carousel-container {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: red;
 }
 
+.carousel {
+  height: 100vh;
+}
 
+.carousel-item img{
+  height: 100vh;
+}
 
 .carousel-indicators li .active{
   background-color: $colorBlue;
+}
+
+
+@media screen and (min-width: $sizeMD) { 
+  .carousel-item {
+    max-height: 100vh;
+  }
 }

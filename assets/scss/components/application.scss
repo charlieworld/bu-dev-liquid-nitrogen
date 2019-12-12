@@ -11,20 +11,50 @@
 }
 
 .application-title{
+  display: none;
+}
+
+
+.application-title-mobile{
   position: absolute;
-  bottom: 50%;
-  margin-bottom: -40px;
+  bottom: 0;
+  z-index: 2;
+  margin-bottom: -25px;
   left: 50%;
-  margin-left: -15%;
+  margin-left: -25%;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #BDCCD4;
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 0rem 1rem;
-  width: 30%;
-  height: 80px;
+  width: 50%;
+  height: 50px;
   img {
-    width: 90%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: $sizeSM) {
+  .application-title-mobile {
+    display: none;
+  }
+  .application-title{
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: -40px;
+    left: 50%;
+    margin-left: -15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BDCCD4;
+    border-radius: 40px;
+    padding: 0rem 1rem;
+    width: 30%;
+    height: 80px;
+    img {
+      width: 90%;
+    }
   }
 }
