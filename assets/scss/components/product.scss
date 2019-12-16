@@ -6,7 +6,7 @@
 
 .product-container{
   background-image: url("~/assets/images/product_bg.png");
-  background-size: 20%;
+  background-size: 40%;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -101,6 +101,10 @@
     width: 70%;
     margin: 0 auto;
     margin-top: 5rem;
+  }
+
+  .product-container{
+    background-size: 25%;
   }
   
   .product-item {
