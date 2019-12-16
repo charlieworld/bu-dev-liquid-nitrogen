@@ -3,21 +3,17 @@
   padding-right: 0px;
 }
 
-.carousel {
-  height: 100vh;
-}
 
-.carousel-item img{
-  height: 100vh;
-}
 
 .carousel-indicators li .active{
   background-color: $colorBlue;
 }
 
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
 
 @media screen and (min-width: $sizeMD) { 
-  .carousel-item {
-    max-height: 100vh;
-  }
+  
 }

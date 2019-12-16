@@ -1,5 +1,7 @@
 
 document.body.onscroll = function() {scrollEvent()};
+document.body.onresize = function() {resizeEvent()};
+
 
 function scrollEvent() {
   var header = document.getElementById("nav_custom");
@@ -11,11 +13,8 @@ function scrollEvent() {
   }
 }
 
-
-function resizeEvent () {
-
+function resizeEvent() {
 }
-
 
 function getWindowHeight() {
   return  window.innerHeight;
@@ -24,6 +23,8 @@ function getWindowHeight() {
 function getWindowWidth() { 
   return  window.innerWidth;
 }
+
+
 
 resizeEvent ();
 scrollEvent();

@@ -8,13 +8,13 @@ $sizeXL: 1200px;
 
 .hide-SM { display: none;}
 .hide-SM-flex { display: none;}
-.hide-MD { display: none;}
+.hide-MD { display: none!important;}
 .hide-MD-flex { display: none;}
 .hide-LG { display: none;}
 .hide-XL { display: none;}
 
 .show-under-XS { display: block;}
-.show-under-SM { display: block;}
+.show-under-SM { display: block!important;}
 .show-under-MD { display: block;}
 .show-under-LG { display: block;}
 .show-under-XL { display: block;}
@@ -26,9 +26,9 @@ $sizeXL: 1200px;
 }
 
 @media screen and (min-width: $sizeMD) {
-  .hide-MD { display: block;}
+  .hide-MD { display: block!important ;}
   .hide-MD-flex { display: flex;}
-  .show-under-SM { display: none;} 
+  .show-under-SM { display: none!important;} 
 }
 
 @media screen and (min-width: $sizeLG) {

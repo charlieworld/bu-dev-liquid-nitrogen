@@ -35,6 +35,22 @@
   }
 }
 
+#application_img_1 {
+  background-image: url('~/assets/images/muice_application_01_m.jpg');
+}
+
+#application_img_2 {
+  background-image: url('~/assets/images/muice_application_02_m.jpg');
+}
+
+#application_img_3 {
+  background-image: url('~/assets/images/muice_application_03_m.jpg');
+}
+
+#application_img_4 {
+  background-image: url('~/assets/images/muice_application_04_m.jpg');
+}
+
 @media screen and (min-width: $sizeSM) {
   .application-title-mobile {
     display: none;
@@ -42,7 +58,7 @@
   .application-title{
     position: absolute;
     bottom: 50%;
-    margin-bottom: -40px;
+    margin-bottom: -30px;
     left: 50%;
     margin-left: -15%;
     display: flex;
@@ -52,9 +68,25 @@
     border-radius: 40px;
     padding: 0rem 1rem;
     width: 30%;
-    height: 80px;
+    height: 60px;
     img {
-      width: 90%;
+      width: 85%;
     }
+  }
+
+  #application_img_1 {
+    background-image: url('~/assets/images/muice_application_01.jpg');
+  }
+  
+  #application_img_2 {
+    background-image: url('~/assets/images/muice_application_02.jpg');
+  }
+  
+  #application_img_3 {
+    background-image: url('~/assets/images/muice_application_03.jpg');
+  }
+  
+  #application_img_4 {
+    background-image: url('~/assets/images/muice_application_04.jpg');
   }
 }
