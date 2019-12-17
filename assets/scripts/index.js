@@ -12,11 +12,13 @@ function scrollEvent() {
     header.classList.add("nav-custom-fixed-top");
     for (var i=0;i<text.length;i++) {
       text[i].style.textShadow = "none";
+      text[i].style.color = "#333333";
     }
   } else {
     header.classList.remove("nav-custom-fixed-top");
     for (var i=0;i<text.length;i++) {
       text[i].style.textShadow = "0 2px 5px black";
+      text[i].style.color = "#FFFFFF";
     }
   }
 }

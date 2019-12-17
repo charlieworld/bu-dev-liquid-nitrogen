@@ -1,7 +1,6 @@
 
 #product{
   position: relative;
-  
 }
 
 .product-container{
@@ -13,6 +12,7 @@
 
 .product-left, .product-right {
   padding-bottom: 10rem;
+  height: 100vh;
 }
 
 .product-left {
@@ -168,5 +168,19 @@
     bottom: 3rem;
     left: 50%;
     margin-left: -35%;
+  }
+}
+
+@media screen and (min-width: $sizeLG) {
+  .product-title {
+    width: 50%;
+  }
+
+  .product-container{
+    background-size: 20%;
+  }
+
+  .product-item {
+    margin: 4rem auto;
   }
 }
