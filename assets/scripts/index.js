@@ -6,7 +6,10 @@ var menuCloseBtn = document.getElementById("navbarClose");
 
 menuCloseBtn.addEventListener("click", function(e){
   var menu = document.getElementById("navbarSupportedContent");
+  var icon = document.getElementById("navbarMobileMenu");
+  
   menu.classList.remove("show");
+
 });
 
 function scrollEvent() {
