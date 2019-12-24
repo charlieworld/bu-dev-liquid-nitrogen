@@ -2,13 +2,21 @@ import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from "constants";
 
 document.body.onscroll = function() {scrollEvent()};
 document.body.onresize = function() {resizeEvent()};
+var menuCloseBtn = document.getElementById("navbarClose");
 
+menuCloseBtn.addEventListener("click", function(e){
+  var menu = document.getElementById("navbarSupportedContent");
+  menu.classList.remove("show");
+});
 
 function scrollEvent() {
   var header = document.getElementById("nav_custom");
   var text = document.getElementsByClassName("nav-link")
 
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+  if (  (document.body.scrollTop > 300 || 
+        document.documentElement.scrollTop > 300) &&
+        (getWindowWidth() >= 768)
+  ) {
     header.classList.add("nav-custom-fixed-top");
     for (var i=0;i<text.length;i++) {
       text[i].style.textShadow = "none";
