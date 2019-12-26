@@ -2,20 +2,23 @@
   padding: 0;
 }
 
-
-
 .nav-custom {
   width: 100%;
 }
-.navbar-light .navbar-nav .nav-link{
+
+.nav-item {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-right: 1rem;
-  color: white;
-  text-shadow: 0 2px 5px black;
   font-weight: 500;
+  margin: 0 1rem;
+  text-align: right;
+  border-bottom: white solid 1px;
+  cursor: pointer;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-  color: $colorBlue;
+.nav-item-title {
+  font-size: 1.6rem;
 }
 
 .nav-logo {
@@ -36,18 +39,15 @@
   .active {
     color: $colorBlue;
   }
-
-  background-color: rgba(0, 142, 216, 0.6);
+  background-color: rgba(0, 142, 216, 0.85);
   width: 100%;
   height: 100vh;
   position: fixed;
   top: 0;
 }
 
-.nav-item {
-  margin: 0 1rem;
-  text-align: right;
-}
+
+
 
 .bg-light {
   background-color: transparent !important;
@@ -61,17 +61,57 @@
 }
 
 .navbar-close {
-  margin-top: 1.4rem;
-  margin-right: 1rem;
-  color: white;
+  margin-top: 10px;
   cursor: pointer;
+  font-size: 36px;
+  color: #4d4d4d;
+  text-shadow: 0 0px 5px white;
+  margin-bottom: 2rem;
 }
 
 .navbar-m-menu {
+  
   position: fixed;
-  top: 1.3rem;
-  right: 1.5rem;
-  color:white;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 36px;
+  color: #4d4d4d;
+  text-shadow: 0 0px 5px white;
+}
+
+.nav-text-moble {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover, a:active {
+    color: #4d4d4d;
+    text-shadow: 0 0px 5px white
+  }
+}
+
+.nav-text-pc-1 {
+  a {
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    text-decoration: none;
+  }
+  a:hover, a:active {
+    color: $colorBlue;
+    text-shadow: 0px 0px 5px white
+  }
+}
+
+.nav-text-pc-2 {
+  a {
+    color: #4d4d4d;
+    text-decoration: none;
+  }
+  a:hover, a:active {
+    color: $colorBlue;
+    text-shadow: 0px 0px 5px white
+  }
 }
 
 @media screen and (min-width: $sizeMD) { 
@@ -89,16 +129,16 @@
     margin-right: 0rem;
   }
 
-  .navbar-light .navbar-nav .nav-link{
-    padding-right: 0;
-  }
-
   .navbar-nav {
     margin-top: 0.7rem;
   }
 
   .nav-item {
+    margin-top: 0px;
+    padding: 0;
     text-align: center;
+    border-bottom: 0px;
+    
   }
 
   .nav-custom {
@@ -108,17 +148,13 @@
   }
 
   .nav-custom-fixed-top {
-    a {
-      color: white;
-    }
-    a:hover {
-      color: $colorBlue;
-    }
     background-color: rgb(207,234,238);
     border-radius: 0px 0px 2rem 2rem;
+    padding-bottom: 10px;
   }
 
   .navbar-nav {
+    font-size: 0.8rem;
     .active {
       color: $colorBlue;
     }
@@ -128,6 +164,10 @@
     height: auto;
     position: relative;
     top:none;
+  }
+
+  .nav-item-title {
+    font-size: 1.2rem;
   }
   
 
