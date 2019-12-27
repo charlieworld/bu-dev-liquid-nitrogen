@@ -3,8 +3,34 @@
   min-height: 100vh;
   position: relative;
   padding: 8rem 0px;
+  padding-top: 25vh;
   background-image: url("~/assets/images/muice_aboutus.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+.about-title {
+  color: $colorBlue;
+  margin-bottom: 2rem;
+}
+
+
+.about-info {
+  color: black;
+  font-weight: 400;
+  font-size: 1rem;
+  &-title {
+    font-weight: 500;
+  }
+
+  &-item {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: $sizeMD) { 
+  .about-info {
+    font-size: 1.2rem;
+  }
 }
