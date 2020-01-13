@@ -4,15 +4,10 @@
 }
 
 .product-container{
-  background-image: url("~/assets/images/product_bg.png");
-  background-size: 40%;
+  background-image: url("~/assets/images/muice_compare.png");
+  background-size: 80%;
   background-repeat: no-repeat;
   background-position: center bottom;
-}
-
-.product-left, .product-right {
-  padding-bottom: 10rem;
-  height: 100vh;
 }
 
 .product-left {
@@ -47,11 +42,12 @@
 
   &-icon {
     align-items: center;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 35px;
-    background-color: gray;
     margin-bottom: 5px;
+    background-size: contain;
+    background-position: center;
   }
 
   &-title-l, &-title-r{
@@ -97,6 +93,11 @@
 
 
 @media screen and (min-width: $sizeMD) {
+
+  .product-left, .product-right {
+    padding-bottom: 4rem;
+  }
+
   .product-title {
     width: 70%;
     margin: 0 auto;
@@ -104,7 +105,7 @@
   }
 
   .product-container{
-    background-size: 25%;
+    background-size: 30%;
   }
   
   .product-item {
@@ -115,10 +116,9 @@
     font-size: 1.1rem;
     &-icon {
       align-items: center;
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       border-radius: 50px;
-      background-color: gray;
       margin-bottom: 0px;
     }
     &-title-red {
@@ -165,7 +165,7 @@
     border-radius: 25px;
     padding: 0.5rem 1rem;
     position: absolute;
-    bottom: 3rem;
+    bottom: 2rem;
     left: 50%;
     margin-left: -35%;
   }
@@ -174,13 +174,5 @@
 @media screen and (min-width: $sizeLG) {
   .product-title {
     width: 50%;
-  }
-
-  .product-container{
-    background-size: 20%;
-  }
-
-  .product-item {
-    margin: 4rem auto;
   }
 }
