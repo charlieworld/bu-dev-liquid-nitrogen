@@ -11,18 +11,19 @@
 }
 
 .product-left {
-  background-color: rgba(228, 202, 227, 0.7);
-  
+  background-color: rgba(228, 202, 227, 0.3);
+  padding-left: 30px;
 }
 
 .product-right {
-  background-color: rgba(192, 227, 245, 0.7);
+  background-color: rgba(192, 227, 245, 0.3);
+  padding-right: 30px;
 }
 
 .product-title {
   width: 100%;
   margin: 0 auto;
-  margin-top: 6rem;
+  margin-top: 7rem;
 }
 
 .product-item {
@@ -83,6 +84,7 @@
 
 
 .product-footer {
+  font-size: 1.3rem;
   width: 100%;
   text-align: center;
   margin: 0 auto;
@@ -101,7 +103,7 @@
   .product-title {
     width: 70%;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
 
   .product-container{

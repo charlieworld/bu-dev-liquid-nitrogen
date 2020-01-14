@@ -25,6 +25,7 @@
   margin:0 auto;
   
   &-title {
+    font-weight: 600;;
     align-items: center;
     padding: 0.5rem 0;
     color:#008ED8;
@@ -62,6 +63,7 @@
   }
 
   .specification-content {
+    width: 100%;
     font-size: 1.2rem;
   }
 
