@@ -1,10 +1,9 @@
 
 .about-container{
-  min-height: 100vh;
   position: relative;
-  padding: 8rem 0px;
-  padding-top: 25vh;
-  background-image: url("~/assets/images/muice_aboutus.jpg");
+  padding: 1rem 0px;
+  padding-top: 3rem;
+  // background-image: url("~/assets/images/muice_aboutus.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -26,12 +25,22 @@
   }
 
   &-item {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
+}
+
+.about-qrcode {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: $sizeMD) { 
   .about-info {
     font-size: 1.2rem;
+  }
+
+  .about-qrcode {
+    text-align: right;
+    margin-bottom: 0px;
   }
 }
